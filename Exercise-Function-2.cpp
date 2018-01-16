@@ -4,25 +4,32 @@
 //a17dw2172
 
 #include <iostream>
+
+
 using namespace std;
-
-
-int sum(int x,int y);
+// function prototype
+int add(int, int);
 
 int main()
 
 {
-	int result;
-	char x, y;
+	int num1, num2, sum;
 	
-	x=10;
-	y=5;
+	cout<< "Enter 2 Number : ";
+	cin>> num1 >>num2;
+	add(num1,num2);
+	return 0;
 	
-	cout<< "x = 10"<<endl;
-	cout<< "y = 5"<<endl;
-	
-	result = x+y;
-	
-	cout<< "The added result is : " <<result <<endl;
+}
 
+//function definition
+
+int add(int x, int y)
+{
+	int add;
+	add=x+y;
+	
+	cout<<"Total is = " <<add;
+	//return statement
+	//return add;
 }
